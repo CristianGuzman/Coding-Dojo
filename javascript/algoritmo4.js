@@ -51,4 +51,4 @@ function rango(list,x,y){
     list.splice(x,y-1);
     return list;
 }
-console.log(rango(prompt("ingrese array",[]),prompt("ingrese rango",Number),prompt("ingrese rango",Number)));
+console.log(rango([20,30,40,50,60,70],2,4));
