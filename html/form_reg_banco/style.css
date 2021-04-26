@@ -1,0 +1,28 @@
+*{
+    border: 5px;
+    padding: 5px;
+}
+.santander{
+    background-color: brown;
+    border-radius: 5px;S
+}
+#content{
+    display: inline-block;
+}
+#cards{
+    width: 100%;
+    display: block;
+}
+.card-img-top{
+    width: 220px;
+    height: 160px;
+}
+.col{
+    height: 400px;
+}
+#area1{
+    width: 50%;
+}
+#formulario{
+    width: 50%;
+}
