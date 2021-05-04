@@ -38,3 +38,41 @@ function fibonacci(num){
     return res;
 }
 
+/* Array: Penúltimo: */
+function penultimo(array){
+    if(array.length < 3){
+        return null;
+    }else{
+        return array[array.length-2]
+    }
+    
+}
+
+/* Array: Segundo más grande: */
+function segundomax(array){
+    var max = 0;
+    var max2 = 0;
+    if(array.length < 2){
+        return null;
+    }else{
+        for(i in array){
+            if(array[i] > max) {
+                max = array[i];
+            }
+        }
+        for(i in array){
+            if (array[i] > max2 && array[i] != max) {
+                max2 = array[i];
+            }
+        }
+        return max2;
+    }
+}
+
+/* Doble Problema Par */
+function doblepar(array){
+    for(i in array){
+        array.splice(i+1,0,array[i]);
+    }
+}
+
