@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        //adjunta un "click event listener" a todas las etiquetas img cuando el documento esté listo
+            $('img').click(function(){
+                $(this).attr('src',$(this).attr('data-alt-src'));
+            });
+        });
+        
+    </script>
+    <title>ninja - gato</title>
+</head>
+<body style="display: grid;">
+    <img src='ninja0.png' data-alt-src='cat0.png' />
+    <img src='ninja1.png' data-alt-src='cat1.png' />
+    <img src='ninja2.png' data-alt-src='cat2.png' />
+    <img src='ninja3.png' data-alt-src='cat3.png' />
+    <img src='ninja4.png' data-alt-src='cat4.png' />
+</body>
+</html>
