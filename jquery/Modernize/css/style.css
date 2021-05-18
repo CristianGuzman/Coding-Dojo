@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+#encabezado{
+    width: 100%;
+    background-color: #1a1a1a;
+}
+#navegate{
+    width: 100%;
+    background: linear-gradient(180deg, #515151, #292929);
+}
+.nav-link{
+    color: white;
+}
+#barra4{
+    width: 100%;
+    height: 200px;
+    background-color: #1a1a1a;
+    display: block;
+    padding-top: 18px;
+}
+.mb-3{
+    width: 24%;
+    font-size: small;
+    display: inline-block;
+    background-color: #1a1a1a;
+    border: none;
+    vertical-align: top;
+}
+h5{
+    color: orange;
+}
+.icon{
+    display: inline-block;
+    margin-bottom: 139px;
+    margin-left: 25px;
+}
+.card-text{
+    color: white;
+}
+.barrat{
+    Background-color: #050505;
+    width: 100%;
+    height: 138px;
+    display: block;
+}
+.info{
+    width: 80%;
+    padding: 13px;
+    color: white;
+    display: inline-block;
+}
+.Buy{
+    width: 15%;
+    padding: 13px;
+    display: inline-block;
+}
+.btn-warning{
+    color: aliceblue;
+    margin-bottom: 50px;
+    background-color: orange;
+}
+#portafolio{
+    width: 100%;
+    background-color: #1a1a1a;
+    display: block;
+    padding: 18px;
+}
+a img{
+    width: 15px;
+    height: 15px;
+    background-color: #050505;
+    color: orange;
+}
+h4{
+    color: white;
+    margin-left: 26px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.view{
+    color: orange;
+    text-decoration: none;
+    margin-left: 712px;
+    line-height: 59px;
+    font-size: 12px;
+    height: 20px;
+    display: inline-block;
+}
+.card{
+    background-color: #1a1a1a;
+}
+.card-group .card{
+    margin: 18px;
+    border: none;
+}
+footer{
+    background-color: #1a1a1a;
+    vertical-align: bottom;
+    text-align: right;
+}
+footer a{
+    color: grey;
+    text-decoration: none;
+}

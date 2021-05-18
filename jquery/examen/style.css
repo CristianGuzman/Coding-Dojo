@@ -1,0 +1,48 @@
+* {
+    padding: 5px;
+    border: 5px;
+}
+#encabezado{
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+    display: block;
+}
+#logo{
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+}
+#buscar{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+}
+#navegate{
+    background-color: blueviolet;
+}
+ul li{
+    display: block;
+}
+#cuerpo{
+    background-color: blue;
+}
+#login{
+    background-color: blueviolet;
+}
+#form{
+    background-color: brown;
+}
+#galeria{
+    background-color: yellowgreen;
+}
+#pie{
+    background-color: tomato;
+}
+.img{
+    background-color: salmon;
+}
+.nav-item{
+    display: inline;
+}
