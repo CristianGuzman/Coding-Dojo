@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $('form').submit(function() {
+            //alert("boton presionado!");
+      
+        $.get("https://chilealerta.com/api/query/?user=demo&select=ultimos_sismos_chile", function(resultado) {
+            //console.log(resultado.ultimos_sismos_chile[0].magnitude);
+            for(var i=0;i<15;i++){
+                var magni = "La Magntiud es:"+resultado.ultimos_sismos_chile[i].magnitude + "<br>";
+                $("#magnitud").append(magni);
+            }
+        
+
+
+
+        }, 'json');
+      
+        return false;
+    });
+      
+    }
+
+    )
+
+
+</script>
+</head>
+<body>
+    <form  method="get">
+        <input type="submit" value="ejecutar api">
+    </form>
+    
+    <div id="magnitud">
+
+
+    </div>
+
+    
+</body>
+</html>
