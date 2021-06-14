@@ -7,7 +7,7 @@ public class Pitagoras {
         //La hipotenusa es el lado opuesto del ángulo recto.
         //Calcular el valor de c dados los valores catetoA y catetoB
 		//Invocando el método estático sqrt de la clase
-		double hipotenusa = Math.sqrt(Math.sqrt(catetoA)+Math.sqrt(catetoB));
+		double hipotenusa = Math.sqrt(Math.sqrt(catetoA) + Math.sqrt(catetoB));
 		return hipotenusa;
 		
     }
