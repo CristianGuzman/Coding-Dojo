@@ -1,7 +1,10 @@
-package com.codingdojo.authentication.controller;
+package com.subcription.controllers;
+
+import java.util.Optional;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -10,16 +13,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.codingdojo.authentication.models.User;
-import com.codingdojo.authentication.services.UserService;
-import com.codingdojo.authentication.validator.UserValidator;
+import com.subcription.models.User;
+import com.subcription.services.UserServices;
+import com.subcription.validator.UserValidator;
+
 
 @Controller
-public class Users {
-    private final UserService userService;
+public class UserController {
+	
+	private final UserServices userService;
     private final UserValidator userValidator;
     
-    public Users(UserService userService, UserValidator userValidator) {
+    public UserController(UserServices userService, UserValidator userValidator) {
         this.userService = userService;
         this.userValidator = userValidator;
     }
@@ -85,4 +90,5 @@ public class Users {
 	public UserValidator getUserValidator() {
 		return userValidator;
 	}
+
 }
