@@ -10,6 +10,24 @@
 </head>
 <body>
 	<h1>Welcome, <c:out value="${user.email}" /></h1>
+	<h3> TV Shows</h3>
+	<table>
+	  <tr>
+	    <th>Shows</th>
+	    <th>Network</th>
+	    <th>AVG Rating</th>
+	  </tr>
+	  <tr>
+	    <td>Alfreds Futterkiste</td>
+	    <td>Maria Anders</td>
+	    <td>Germany</td>
+	  </tr>
+	  <tr>
+	    <td>Centro comercial Moctezuma</td>
+	    <td>Francisco Chang</td>
+	    <td>Mexico</td>
+	  </tr>
+	</table>
 	<a href="/logout">Logout</a>
 </body>
 </html>

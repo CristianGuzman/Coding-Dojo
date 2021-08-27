@@ -15,16 +15,16 @@ import com.codingdojo.authentication.services.UserService;
 import com.codingdojo.authentication.validator.UserValidator;
 
 @Controller
-public class Users {
+public class UserController {
     private final UserService userService;
     private final UserValidator userValidator;
     
-    public Users(UserService userService, UserValidator userValidator) {
+    public UserController(UserService userService, UserValidator userValidator) {
         this.userService = userService;
         this.userValidator = userValidator;
     }
     
-    @RequestMapping("/registration")
+    @RequestMapping("/")
     public String registerForm(@ModelAttribute("user") User user) {
         return "registrationPage.jsp";
     }
